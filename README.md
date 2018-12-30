@@ -13,3 +13,12 @@ npx install-peerdeps --dev eslint-config-airbnb
 npm install -D eslint-config-prettier eslint-plugin-prettier
 ```
 * ...
+
+
+## Troubleshooting
+* in some cases (perhaps depending on how babel is used), eslint may throw incorrect parsing errors
+    - unable to parse '='
+    - potential fix:  use 'babel-eslint' parser
+        + https://stackoverflow.com/questions/36001552/eslint-parsing-error-unexpected-token
+
+        
