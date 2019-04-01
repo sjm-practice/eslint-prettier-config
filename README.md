@@ -12,7 +12,11 @@ npm install -D eslint prettier
 npx install-peerdeps --dev eslint-config-airbnb
 npm install -D eslint-config-prettier eslint-plugin-prettier
 ```
-* ...
+* for projects using babel to transform javascript, you likely need to include the babel-eslint package
+``` 
+npm install -D babel-eslint
+```
+* editor settings...
 
 
 ## Troubleshooting
