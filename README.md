@@ -12,6 +12,11 @@ npm install -D eslint prettier
 npx install-peerdeps --dev eslint-config-airbnb
 npm install -D eslint-config-prettier eslint-plugin-prettier
 ```
+* if you are using meteor, add the eslint-plugin-meteor
+    - refer to `.eslint.meteor.json` for meteor specific eslint settings
+```
+npm install -D eslint-plugin-meteor
+```
 * for projects using babel to transform javascript, you likely need to include the babel-eslint package
 ``` 
 npm install -D babel-eslint
