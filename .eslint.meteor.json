@@ -1,25 +1,30 @@
 {
   "plugins": [
     "meteor",
-    "react"
+    "prettier"
   ],
   "extends": [
     "airbnb",
     "plugin:meteor/recommended",
-    "plugin:react/recommended"
+    "prettier"
   ],
   "env": {
-    "es6": true
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "alert": true,
+    "self": true,
+    "Meteor": true
   },
   "parserOptions": {
     "sourceType": "module",
+    "ecmaVersion": 2017,
     "ecmaFeatures": {
       "jsx": true,
       "spread": true,
-      "modules": true,
-      "blockBindings": true,
-      "destructuring": true,
-      "arrowFunctions": true
+      "blockBindings": true
     }
   },
   "settings": {
@@ -46,6 +51,7 @@
         "allowTemplateLiterals": true
       }
     ],
+    "no-restricted-globals": "off",
     "no-underscore-dangle": [
       "error",
       {
@@ -97,6 +103,18 @@
         "devDependencies": true
       }
     ],
-    "jsx-a11y/no-static-element-interactions": "warn"
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "arrowParens": "avoid",
+        "bracketSpacing": true,
+        "printWidth": 90,
+        "singleQuote": false,
+        "tabWidth": 2,
+        "trailingComma": "all",
+        "useTabs": false
+      }
+    ]
   }
 }

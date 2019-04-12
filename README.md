@@ -17,7 +17,7 @@ npm install -D eslint-config-prettier eslint-plugin-prettier
 ```
 npm install -D eslint-plugin-meteor
 ```
-* for projects using babel to transform javascript, you likely need to include the babel-eslint package
+* for projects using Flow or expiremental features not yet supported by ESLint, you may need to include the [babel-eslint](https://www.npmjs.com/package/babel-eslint) package
 ``` 
 npm install -D babel-eslint
 ```
