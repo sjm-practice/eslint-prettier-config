@@ -29,5 +29,4 @@ npm install -D babel-eslint
     - unable to parse '='
     - potential fix:  use 'babel-eslint' parser
         + https://stackoverflow.com/questions/36001552/eslint-parsing-error-unexpected-token
-
-        
+* if when manually setting up (adding) prettier, and getting an error like "Definition for rule 'prettier/prettier' not found", likely need to add prettier to extends and plugins in `.eslintrc.json`, see example [here](https://github.com/prettier/eslint-plugin-prettier/issues/20)
